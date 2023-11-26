@@ -1,0 +1,102 @@
+#:kivy 1.0.9
+
+<MarioGame>:
+    gamepov: EntireLayout
+    mario: Mario
+    
+    canvas:
+        
+    FloatLayout:
+        id: EntireLayout
+        size: 3392, 224
+        Image:
+            source: '.\img\level_1.png'
+            allow_stretch: True 
+
+          
+    GamePov:
+        
+    Mario:
+        id: Mario
+        pos: 64, 50
+        
+<Mario>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+        
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
+<GamePov>:
+                    
+<Brick>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
+<HardBrick>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
+<Pipe>:
+    hitbox: Hitbox
+    size: 32, 32
+    canvas:
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    FloatLayout:
+        id: Hitbox
+        size: 32, 32
+        pos: self.parent.pos
+<Floor>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+            
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
+<Enemy>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+        
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
+<Mushroom>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+        
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
+<Star>:
+    hitbox: Hitbox
+    size: 16, 16
+    canvas:
+        
+    FloatLayout:
+        id: Hitbox
+        size: 16, 16
+        pos: self.parent.pos
